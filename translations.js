@@ -26,7 +26,7 @@ const translations = {
         team2: "Hernádi Bence",
         team3: "Véber-Jurassa Márk",
         team4: "Lakatos-Dienes Ádám",
-        bence: "Kívül cigány, bellül vidám",
+        bence: "Kívül cigány, belül vidám",
         mark: "Átlagos Szomódi",
         adam: "Biciklis köcsög",
         footer: "Minden jog fenntartva - 2023 - All rights reserved"
