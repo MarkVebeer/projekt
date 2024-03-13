@@ -18,3 +18,25 @@ sr.reveal('.hero-img',{delay: 450, origin:'top'});
 sr.reveal('.icons',{delay: 500, origin:'left'});
 sr.reveal('.scroll-down',{delay: 500, origin:'right'});
 sr.reveal('.norbi-text',{delay: 500, origin:'top'});
+
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', navHighlighter);
+
+function navHighlighter() {
+    let scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.navlist a[href*=' + sectionId + ']').classList.add('active');
+        } else {
+            document.querySelector('.navlist a[href*=' + sectionId + ']').classList.remove('active');
+        }
+    });
+}
+
+navHighlighter();
