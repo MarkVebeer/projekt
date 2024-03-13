@@ -6,6 +6,10 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    background: linear-gradient(245.59deg, #143d6a 0%, #10203b 28.53%, #061523 75.52%);
+    background-attachment: fixed;
+}
 header{
     position: fixed;
     right: 0;
@@ -48,7 +52,6 @@ header{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #143d6a 0%, #10203b 28.53%, #061523 75.52%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,12 +75,7 @@ section{
     color: white;
     margin: 0 0 45px;
 }
-.hero-text h4{
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 10px;
-}
+
 .hero-text p{
     color: white;
     font-size: 15px;
@@ -149,6 +147,23 @@ section{
 }
 .scroll-down i:hover{
     transform: translateY(-5px);
+}
+
+.norbi{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+}
+.norbi-text h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
 }
 
 @media (max-width: 1535px){
