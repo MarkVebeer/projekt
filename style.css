@@ -48,7 +48,7 @@ header{
     border-bottom: 2px solid white;
 }
 header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.849), transparent);
     transition: all 1s ease;
 }
 #menu-icon{
@@ -79,7 +79,6 @@ section{
     margin-bottom: 40px;   
 }
 .hero-text h1{
-    font-family: 'Permanent Marker', cursive;
     font-size: 90px;
     line-height: 1;
     color: white;
@@ -158,8 +157,60 @@ section{
 .scroll-down i:hover{
     transform: translateY(-5px);
 }
+.employes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25%;
+}
 
-.norbi{
+.employes-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%;
+}
+
+.employes-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.employes-text h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.employes-text p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.employes-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 990px) {
+    .employes {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3%;
+    }
+
+    .employes-person {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+
+.services {
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -168,12 +219,121 @@ section{
     align-items: center;
     gap: 2rem;
 }
-.norbi-text h1{
+
+.services-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* középre igazítás */
+}
+
+
+.services-text h1 {
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
     font-size: 90px;
     line-height: 1;
     color: white;
+    margin-bottom: 30px;
+}
+
+.service {
+    background-color: rgba(255, 255, 255, 0.035);
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Fél szélesség */
+    margin: 10px; /* Kicsi margó a kártyák között */
+    max-width: 560px; /* Maximum szélesség */
+}
+
+.service h2 {
+    color: white;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    padding-left: 20px;
+    color: white;
+}
+
+.service ul li {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.spacing{
+    height: 20px;
+}
+
+.contact-info {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px; /* A rész cím és a tartalom közötti távolság */
+}
+
+.section-title h1 {
+    color: white;
+    font-size: 90px;
+    line-height: 1;
+}
+
+.spacer {
+    padding: 45px;
+}
+
+.section-description {
+    font-size: 21px;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+    margin: 0 auto; /* középre igazítás */
+    width: 70%; /* példa szélesség, állítsd be a kívánt értékre */
+}
+
+.about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.gallery-image {
+    width: 70%;
+    margin: 0 auto; /* Középre igazítás */
+}
+
+.gallery-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media lekérdezés */
+@media (max-width: 990px) {
+    .service {
+        width: calc(100% - 20px); /* Teljes szélesség */
+    }
 }
 
 @media (max-width: 1535px){
@@ -198,8 +358,8 @@ section{
 }
 @media (max-width: 1340px){
     .hero-img img{
-        width: 100%;
-        height: auto;
+        width: 350px;
+        height: auto;   
     }
     .hero-text h1{
         font-size: 75px;
@@ -221,7 +381,7 @@ section{
         text-align: center;
     }
     .hero-img img{
-        width: 560px;
+        width: 300px;
         height: auto;
     }
     .hero{
@@ -234,6 +394,9 @@ section{
     }
     .scroll-down{
         display: none;
+    }
+    .employes {
+        padding: 0 17%;
     }
 }
 
